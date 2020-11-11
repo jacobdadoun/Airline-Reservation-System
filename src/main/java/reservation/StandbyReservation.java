@@ -10,7 +10,7 @@ public class StandbyReservation extends AbstractReservation {
      * @param flightNo    takes the flight number
      * @param checkedBags takes the number of checked bags
      */
-    public StandbyReservation(Passenger passenger, String flightNo, int checkedBags) {
+    public StandbyReservation(Passenger<T> passenger, String flightNo, int checkedBags) {
         super(passenger, flightNo, checkedBags);
     }
 

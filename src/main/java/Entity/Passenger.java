@@ -18,5 +18,4 @@ public class Passenger {
         return lastName;
     }
 
-
 }

@@ -7,7 +7,7 @@ abstract class AbstractReservation {
     /**
      * customerName, checkedBags and flightNo can only be set once
      */
-    protected final Passenger passenger;
+    protected final Passenger<T> passenger;
     private final int checkedBags;
     private final String flightNo;
     /**
@@ -25,7 +25,7 @@ abstract class AbstractReservation {
      * @param flightNo takes the flight number
      * @param checkedBags takes the number of checked bags
      */
-    public AbstractReservation(Passenger passenger, String flightNo, int checkedBags) {
+    public AbstractReservation(Passenger<T> passenger, String flightNo, int checkedBags) {
         this.passenger = passenger;
         this.flightNo = flightNo;
         this.checkedBags = checkedBags;

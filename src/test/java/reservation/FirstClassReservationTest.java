@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class FirstClassReservationTest {
 
-    Passenger passenger = new Passenger("Jacob", "Dadoun");
+    Passenger<T> passenger = new Passenger<T>("Jacob", "Dadoun");
     FirstClassReservation firstClassReservation = new FirstClassReservation(passenger,"UA417", 2);
 
     @DisplayName("reservationType()")
